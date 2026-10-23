@@ -1,0 +1,81 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-blue: #3e6ae1;
+  --color-blue-hover: #3458c0;
+  --color-carbon: #171a20;
+  --color-graphite: #393c41;
+  --color-pewter: #5c5e62;
+  --color-silver: #8e8e8e;
+  --color-ash: #f4f4f4;
+  --font-sans: "Pretendard Variable", Pretendard, -apple-system, Arial, sans-serif;
+}
+
+html {
+  scroll-behavior: auto;
+}
+
+body {
+  background: #fff;
+  color: #393c41;
+  font-family: var(--font-sans);
+  font-size: 14px;
+  line-height: 1.43;
+  font-weight: 400;
+}
+
+/* DDS: 버튼 4px, 0.33s 전환, 그림자·그라디언트 없음 */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 40px;
+  width: 200px;
+  max-width: 100%;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 500;
+  transition: background-color 0.33s, color 0.33s;
+}
+.btn-primary {
+  background: #3e6ae1;
+  color: #fff;
+}
+.btn-primary:hover {
+  background: #3458c0;
+}
+.btn-secondary {
+  background: #fff;
+  color: #393c41;
+}
+.btn-secondary:hover {
+  background: #f4f4f4;
+}
+
+.btn-outline {
+  background: transparent;
+  color: #393c41;
+  box-shadow: inset 0 0 0 1px #393c41;
+}
+.btn-outline:hover {
+  background: #f4f4f4;
+}
+
+.title-hero {
+  font-size: clamp(28px, 4vw, 40px);
+  line-height: 1.2;
+  font-weight: 500;
+}
+
+.section-full {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition-duration: 0s !important;
+  }
+}
