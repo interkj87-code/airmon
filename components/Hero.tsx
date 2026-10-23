@@ -41,12 +41,12 @@ export default function Hero() {
             유아용품 업계 출신 5명의 아빠가 만든 통풍 브랜드. 유모차, 낮잠, 그리고 강아지까지 시원한 바람으로
             체온을 지킵니다.
           </p>
-          <div data-hero-text className="mt-10 flex flex-col gap-3 sm:flex-row">
-            <a href={company.storeUrl} target="_blank" rel="noreferrer" className="btn btn-primary">
+          <div data-hero-text className="hero-actions mt-10 flex flex-col gap-3 sm:flex-row">
+            <a href={company.storeUrl} target="_blank" rel="noreferrer" className="btn btn-primary btn-store">
               공식 스마트스토어
             </a>
-            <Link href="/about" className="btn btn-outline">
-              회사 소개
+            <Link href="/about" className="btn btn-gray btn-story">
+              브랜드 스토리
             </Link>
           </div>
         </div>

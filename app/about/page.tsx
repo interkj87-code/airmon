@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import Nav from "@/components/Nav";
 import ScrollReveal from "@/components/ScrollReveal";
-import PriceCta from "@/components/PriceCta";
 import Footer from "@/components/Footer";
 import { company } from "@/content/company";
 
 export const metadata: Metadata = {
-  title: "회사 소개 | 에어몬 Airmon",
+  title: "브랜드 스토리 | 에어몬 Airmon",
   description: company.aboutTitle,
 };
 
@@ -86,7 +86,19 @@ export default function About() {
         </section>
       ))}
 
-      <PriceCta />
+      <section className="bg-ash px-5 py-20 md:py-28">
+        <div className="mx-auto flex max-w-[1383px] flex-col items-center justify-center gap-3 sm:flex-row">
+          <Link href="/" className="btn btn-outline">
+            돌아가기
+          </Link>
+          <a href={company.storeUrl} target="_blank" rel="noreferrer" className="btn btn-primary">
+            공식 스마트스토어
+          </a>
+          <Link href="/#contact" className="btn btn-gray">
+            Contact us
+          </Link>
+        </div>
+      </section>
       <Footer />
     </main>
   );

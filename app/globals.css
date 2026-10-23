@@ -61,6 +61,21 @@ body {
   background: #f4f4f4;
 }
 
+.btn-gray {
+  background: #d9d9d9;
+  color: #393c41;
+}
+
+/* 히어로: 브랜드 스토리에 마우스를 올리면 파란색, 공식 스마트스토어는 회색으로 반전 */
+.hero-actions:has(.btn-story:hover) .btn-story {
+  background: #3e6ae1;
+  color: #fff;
+}
+.hero-actions:has(.btn-story:hover) .btn-store {
+  background: #d9d9d9;
+  color: #393c41;
+}
+
 .title-hero {
   font-size: clamp(28px, 4vw, 40px);
   line-height: 1.2;

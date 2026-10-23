@@ -24,7 +24,7 @@ export default function Solution() {
             ))}
           </div>
           <Link href="/about" className="btn btn-primary mt-10">
-            회사 소개 보기
+            브랜드 스토리 보기
           </Link>
         </div>
       </div>

@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 
 const links = [
-  ["회사소개", "/about"],
+  ["브랜드 스토리", "/about"],
   ["문제", "/#problem"],
   ["제품", "/#lineup"],
   ["Contact", "/#contact"],

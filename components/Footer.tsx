@@ -12,7 +12,7 @@ export default function Footer() {
         </div>
         <ul className="space-y-1">
           <li>
-            <Link href="/about">회사 소개</Link>
+            <Link href="/about">브랜드 스토리</Link>
           </li>
           <li>
             <Link href="/#lineup">제품 라인업</Link>
